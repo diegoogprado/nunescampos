@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade Especializada para Arquitetos | Nunes Campos Assessoria Contábil</title>
+    <meta name="description" content="Serviço de contabilidade especializado para empresas de arquitetura no interior do RJ. Otimize sua gestão financeira, reduza impostos e evite multas. Fale com um especialista hoje.">
+    <meta property="og:title" content="Contabilidade Especializada para Arquitetos | Nunes Campos Assessoria Contábil">
+    <meta property="og:description" content="Serviço de contabilidade especializado para empresas de arquitetura no interior do RJ. Otimize sua gestão financeira, reduza impostos e evite multas. Fale com um especialista hoje.">
+    <meta property="og:image" content="hero.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nunescampos.com.br">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contabilidade Especializada para Arquitetos | Nunes Campos Assessoria Contábil">
+    <meta name="twitter:description" content="Serviço de contabilidade especializado para empresas de arquitetura no interior do RJ. Otimize sua gestão financeira, reduza impostos e evite multas. Fale com um especialista hoje.">
+    <meta name="twitter:image" content="hero.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p/z5vU4FhkZLBd0ss8UlQObeAohHgDQ5ZNhxJ+z0qrdw17jaZELi3fqKMbUiYYEZeHJ/ZQ7O8ZMGR0cgPtRw/" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --primary-color: #c19a5b;
+            --secondary-color: #121212;
+            --light-color: #ffffff;
+            --neutral-color: #f7f7f7;
+            --text-color: #333333;
+            --font-family: 'Montserrat', sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--neutral-color);
+        }
+        header {
+            background-image: url('hero.png');
+            background-size: cover;
+            background-position: center;
+            color: var(--light-color);
+            text-align: center;
+            padding: 5rem 1rem 7rem;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0,0,0,0.55);
+        }
+        header .content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header img.logo {
+            width: 220px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        header p.lead {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 0.8rem 1.6rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover, .btn:focus {
+            background-color: #b58b4f;
+        }
+        .section {
+            padding: 4rem 1rem;
+        }
+        .section:nth-child(even) {
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h2.section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+        .about p {
+            margin-bottom: 1rem;
+        }
+        .about ul {
+            list-style: none;
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .about ul li {
+            flex: 1 1 250px;
+            background-color: var(--neutral-color);
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-item {
+            background-color: var(--neutral-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .service-item i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+        .service-item h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .service-item img.service-icon { width:64px; height:64px; margin-bottom:0.75rem; }
+        .service-item p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            min-height: 60px;
+        }
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .testimonial {
+            background-color: var(--neutral-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .testimonial .stars {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+        .testimonial .author {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .testimonial .role {
+            color: #777;
+            font-size: 0.85rem;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            padding: 2rem 1rem;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
+        footer .legal-links {
+            margin-top: 1rem;
+        }
+        footer .legal-links a {
+            margin-right: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            header p.lead { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <img src="logo.png" alt="Logo Nunes Campos Assessoria Contábil" class="logo" loading="lazy" decoding="async" width="360" height="150" />
+            <h1>Contabilidade especializada para empresas de arquitetura</h1>
+            <p class="lead">Mantenha seus projetos em dia com a legislação, reduza a carga tributária e foque no que você faz de melhor.</p>
+            <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20servi%C3%A7os%20de%20contabilidade%20para%20empresas%20de%20arquitetura.%20Podemos%20conversar%3F" class="btn" role="button" aria-label="Fale com um especialista via WhatsApp">Fale com um especialista</a>
+        </div>
+    </header>
+    <main>
+        <section class="section" id="about">
+            <div class="container about">
+                <h2 class="section-title">Quem somos</h2>
+                <p>Qualidade e personalização no atendimento aos nossos clientes são marcas registradas da Nunes Campos Assessoria Contábil. Atuamos com serviços contábeis, fiscais, de departamento pessoal e assessoria empresarial, oferecendo apoio a empresas de diversos nichos com foco em resultados positivos e princípios éticos.</p>
+                <p>Nossa missão é fornecer soluções contábeis especializadas e de excelência para prestadores de serviço, ajudando-os a otimizar sua gestão financeira, reduzir a carga tributária e alcançar maior eficiência nos negócios, com um atendimento personalizado e humanizado.</p>
+                <p>Buscamos ser reconhecidos como o escritório de contabilidade de referência para prestadores de serviço, destacando-nos pela inovação, qualidade e pelo relacionamento de confiança construído com nossos clientes.</p>
+                <ul>
+                    <li><strong>Compromisso com o cliente</strong><br>Priorizar as necessidades dos clientes, oferecendo soluções personalizadas que agreguem valor e facilitem a gestão de seus negócios.</li>
+                    <li><strong>Excelência</strong><br>Buscar continuamente a melhoria dos serviços, garantindo qualidade, precisão e eficiência em todas as entregas.</li>
+                    <li><strong>Transparência</strong><br>Manter uma comunicação clara e honesta, proporcionando confiança e segurança em todas as etapas do serviço.</li>
+                    <li><strong>Inovação</strong><br>Utilizar as mais modernas ferramentas e práticas contábeis para atender às demandas específicas do setor.</li>
+                    <li><strong>Ética e integridade</strong><br>Atuar sempre com ética, respeito e responsabilidade, seguindo os padrões de conduta contábil e legal.</li>
+                </ul>
+                <div class="cta">
+                    <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20hist%C3%B3ria%20e%20os%20servi%C3%A7os%20da%20Nunes%20Campos.%20" class="btn" role="button" aria-label="Saiba como podemos ajudar">Descubra como podemos ajudar</a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="section-title">Nossos serviços</h2>
+                <div class="services">
+                    <div class="service-item">
+                        <img src="icon-contabil.png" alt="Ícone de calculadora" class="service-icon" loading="lazy" decoding="async" />
+                        <h3>Contábil</h3>
+                        <p>Escrituração contábil convencional, levantamento de balancetes e relatórios, elaboração de demonstrações contábeis e muito mais.</p>
+                        <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20servi%C3%A7os%20cont%C3%A1beis%20para%20minha%20empresa%20de%20arquitetura.%20" class="btn" role="button" aria-label="Solicitar serviço contábil">Solicitar serviço</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="icon-fiscal.png" alt="Ícone de relatório fiscal" class="service-icon" loading="lazy" decoding="async" />
+                        <h3>Fiscal</h3>
+                        <p>Escrituração fiscal, cálculos e apuração de tributos federais, estaduais e municipais, consultoria fiscal e tributária e muito mais.</p>
+                        <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20servi%C3%A7os%20fiscais%20para%20minha%20empresa%20de%20arquitetura.%20" class="btn" role="button" aria-label="Solicitar serviço fiscal">Solicitar serviço</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="icon-pessoal.png" alt="Ícone de equipe" class="service-icon" loading="lazy" decoding="async" />
+                        <h3>Pessoal</h3>
+                        <p>Registro de empregados, elaboração das folhas de pagamento e obrigações acessórias, programação e aviso de férias, entre outros.</p>
+                        <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20servi%C3%A7os%20de%20departamento%20pessoal.%20" class="btn" role="button" aria-label="Solicitar serviço pessoal">Solicitar serviço</a>
+                    </div>
+                    <div class="service-item">
+                        <img src="icon-constituicao.png" alt="Ícone de constituição de empresa" class="service-icon" loading="lazy" decoding="async" />
+                        <h3>Constituição de empresas</h3>
+                        <p>Registro empresarial, Registro Civil de Pessoas Jurídicas, inscrições no CNPJ e legalização completa da atividade.</p>
+                        <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20constitui%C3%A7%C3%A3o%20ou%20regulariza%C3%A7%C3%A3o%20de%20empresa.%20" class="btn" role="button" aria-label="Solicitar constituição de empresas">Solicitar serviço</a>
+                    </div>
+                </div>
+                <div class="cta">
+                    <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Nunes%20Campos.%20" class="btn" role="button" aria-label="Fale conosco sobre serviços">Fale conosco</a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">Depoimentos de clientes</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>“A equipe da Nunes Campos foi essencial para estruturar a contabilidade da minha empresa. Reduzimos impostos e agora tenho mais segurança para focar nos projetos.”</p>
+                        <div class="author">Gabriela P.</div>
+                        <div class="role">Arquiteta, Studio GP</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p>“Além de compreenderem as particularidades do nosso setor, eles oferecem um atendimento extremamente personalizado.”</p>
+                        <div class="author">Rodrigo M.</div>
+                        <div class="role">Sócio, Morada Arquitetura</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>“Antes eu tinha medo de multas e imprevistos fiscais. Hoje sei que estou 100% em conformidade e pagando o justo.”</p>
+                        <div class="author">Mariana T.</div>
+                        <div class="role">Arquiteta, Ateliê Criativo</div>
+                    </div>
+                </div>
+                <div class="cta">
+                    <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20gostaria%20de%20me%20tornar%20um%20cliente%20da%20Nunes%20Campos.%20" class="btn" role="button" aria-label="Seja mais um cliente satisfeito">Quero ser um cliente satisfeito</a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="faq">
+            <div class="container">
+                <h2 class="section-title">Dúvidas frequentes</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>Quanto custa o serviço?</h4>
+                        <p>Nossas soluções são personalizadas de acordo com o porte e necessidades da sua empresa. Entre em contato para receber uma proposta sem compromisso.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Qual é o prazo de implementação?</h4>
+                        <p>Após o envio da documentação, realizamos a regularização em poucos dias úteis e acompanhamos o andamento de todos os processos para garantir agilidade.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Tenho garantia de sigilo e segurança dos meus dados?</h4>
+                        <p>Sim. Utilizamos tecnologias de proteção de dados e seguimos rigorosamente a Lei Geral de Proteção de Dados (LGPD) para garantir sigilo e integridade.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Quais formas de contato vocês oferecem?</h4>
+                        <p>Atendemos por telefone, WhatsApp e e‑mail. Estamos sempre disponíveis para esclarecer dúvidas e acompanhar as demandas da sua empresa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Posso migrar a contabilidade em qualquer momento?</h4>
+                        <p>Sim. Auxiliamos em todo o processo de migração de forma simples e sem interromper suas atividades, garantindo uma transição tranquila.</p>
+                    </div>
+                </div>
+                <div class="cta">
+                    <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20outras%20d%C3%BAvidas%20sobre%20os%20servi%C3%A7os%20da%20Nunes%20Campos.%20" class="btn" role="button" aria-label="Tire suas dúvidas agora">Não encontrou sua dúvida? Fale conosco</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>CNPJ: 00.000.000/0001-23 — Nunes Campos Assessoria Contábil</p>
+            <p>Telefone: <a href="https://wa.me/5521970243475?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20conhecer%20mais%20sobre%20seus%20servi%C3%A7os.%20">(21) 97024‑3475</a> | E‑mail: <a href="mailto:contato@nunescampos.com.br">contato@nunescampos.com.br</a></p>
+            <p>Endereço: Rio de Janeiro, RJ</p>
+            <div class="legal-links">
+                <a href="https://www.nunescampos.com.br/pol%C3%ADtica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+                <a href="/terms" target="_blank">Termos de Uso</a>
+            </div>
+            <p>© 2025 Nunes Campos Assessoria Contábil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
